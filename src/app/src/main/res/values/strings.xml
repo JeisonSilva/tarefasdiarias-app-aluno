@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Atende Alunos</string>
+    <string name="open_drawer">abrir</string>
+    <string name="close_drawer">sair</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="listatarefasdigitacao_titulo">Tarefas disponíveis</string>
+    <string name="nova_tarefa_titulo">Título</string>
+    <string name="nova_tarefa_pontuacao">Pontuação</string>
+    <string name="nova_tarefa_disciplina">Disciplina</string>
+    <string name="nova_tarefa_aluno">Aluno</string>
+    <string name="nova_tarefa_professor">Professor</string>
+    <string name="nova_tarefa_salvar">SALVAR</string>
+    <string name="nova_tarefa_cancelar">Cancelar</string>
+    <string name="dialog_OK">OK</string>
+    <string name="dialog_exclusao">Deseja excluir este item?</string>
+    <string name="dialog_Cancel">Cancelar</string>
+    <string name="dialog_notificacao_aluno">Deseja enviar tarefa para o aluno?</string>
+    <string name="login_titulo">Bem-vindo ao controle de tarefas</string>
+    <string name="login_subtitulo">Inicie a sessão para começar</string>
+    <string name="login_campo_email">Email</string>
+    <string name="login_campo_senha">Senha</string>
+    <string name="login_entrar">Entrar</string>
+    <string name="logout">Sair</string>
+    <string name="listagemDisciplina_titulo">Disciplinas</string>
+    <string name="listagemAluno_titulo">Alunos Matriculados</string>
+    <string name="listatarefasdisponiveis_titulo">Tarefas disponíveis</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/nav_gestao_tarefas"
+            android:icon="@drawable/ic_baseline_ballot_48"
+            android:title="Gestão de tarefas" />
+
+        <item android:id="@+id/nav_lista_alunos"
+            android:icon="@drawable/ic_baseline_person_48"
+            android:title="Lista de alunos" />
+
+        <item android:id="@+id/nav_lista_disciplinas"
+            android:icon="@drawable/ic_baseline_import_contacts_48"
+            android:title="Lista de disciplinas" />
+    </group>
+</menu>
