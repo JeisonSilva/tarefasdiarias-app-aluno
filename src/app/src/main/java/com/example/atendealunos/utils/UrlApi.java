@@ -3,6 +3,7 @@ package com.example.atendealunos.utils;
 public class UrlApi {
     private static final String URL_BASE = "https://192.168.1.102:8443";
     public static final String URL_LISTA_ALUNOS_MATRICULADOS = URL_BASE + "/api/v1/alunos/professor/%s";
+    public static final String URL_LISTA_COLEGAS_CLASSE_ALUNO = URL_BASE + "/api/v1/alunos/colegasclasse/%s";
     public static final String URL_LISTA_DISCIPLINAS = URL_BASE + "/api/v1/disciplinas";
     public static final String URL_LISTA_TAREFAS_EM_DIGITACAO = URL_BASE + "/api/v1/tarefas/professor/%s";
     public static final String URL_LISTA_TAREFAS_EDICAO = URL_BASE + "/api/v1/tarefas/%d";

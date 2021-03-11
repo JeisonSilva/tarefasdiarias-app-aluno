@@ -53,10 +53,8 @@ public class LoginActivity extends AppCompatActivity implements LoginDal {
             public void onErrorResponse(VolleyError error) {
                 if(error.networkResponse == null) {
                     Toast.makeText(getBaseContext(), "Não conseguimos encontrar o servidor!",Toast.LENGTH_LONG).show();
-                    autorizacaoDal.finalizarProgressoLogin();
                     return;
                 }
-
 
                 switch (error.networkResponse.statusCode){
                     case 400:
@@ -67,9 +65,10 @@ public class LoginActivity extends AppCompatActivity implements LoginDal {
                         break;
                     case 500:
                         alertar("Falha em nossos servidores");
-                        autorizacaoDal.finalizarProgressoLogin();
                         break;
                 }
+
+                autorizacaoDal.finalizarProgressoLogin();
 
             }
         }){

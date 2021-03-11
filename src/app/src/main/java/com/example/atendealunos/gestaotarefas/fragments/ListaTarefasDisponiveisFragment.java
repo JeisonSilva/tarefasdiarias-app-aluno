@@ -33,7 +33,6 @@ public class ListaTarefasDisponiveisFragment extends Fragment implements ListaTa
     private String mParam1;
     private String mParam2;
     private RecyclerView rc_tarefasEmDigitacao;
-    private FloatingActionButton fb_nova_tarefa;
     private ListaTarefasDisponiveisDal listaTarefasDisponiveisDal;
     private SwipeRefreshLayout swipeRefreshLayout;
 
@@ -77,14 +76,6 @@ public class ListaTarefasDisponiveisFragment extends Fragment implements ListaTa
     }
     
     private void configurar(View view) {
-        this.fb_nova_tarefa = view.findViewById(R.id.fb_nova_tarefa);
-        this.fb_nova_tarefa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                listaTarefasDisponiveisDal.exibirTelaParaCriarNovaTarefa();
-            }
-        });
-
         this.swipeRefreshLayout = view.findViewById(R.id.swipeRefreshLayout);
         this.rc_tarefasEmDigitacao = view.findViewById(R.id.rc_lista_tarefas_em_digitacao);
         this.rc_tarefasEmDigitacao.setLayoutManager(new LinearLayoutManager(getContext()));

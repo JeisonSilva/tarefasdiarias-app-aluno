@@ -244,7 +244,7 @@ public class HomeActivity extends AppCompatActivity
     @Override
     public void listarAlunosMatriculados(final ListaAlunosDal listaAlunosDal) {
         HttpsTrustManager.allowAllSSL();
-        String URL = String.format(UrlApi.URL_LISTA_ALUNOS_MATRICULADOS, this.perfil.getEmail());
+        String URL = String.format(UrlApi.URL_LISTA_ALUNOS_MATRICULADOS, this.perfil.getEmailProfessor());
         StringRequest stringRequest = new StringRequest(Request.Method.GET, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -345,12 +345,14 @@ public class HomeActivity extends AppCompatActivity
         }).create().show();
     }
 
-    private void notificarTarefaPronta(int id) {
+    private void notificarTarefaPronta(final int id) {
         HttpsTrustManager.allowAllSSL();
         String URL = String.format(UrlApi.URL_NOTIFICAR_TAREFA_ENTREGUE, id);
         StringRequest stringRequest = new StringRequest(Request.Method.PUT, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                getContentResolver().delete(Uri.parse("content://com.example.tarefasdiarias/tarefas"), "ID=?", new String[]{String.valueOf(id)});
+
                 listarTarefasEmDigitacao();
                 Toast.makeText(getApplicationContext(), "Parabéns! tarefa concluída", Toast.LENGTH_LONG).show();
             }

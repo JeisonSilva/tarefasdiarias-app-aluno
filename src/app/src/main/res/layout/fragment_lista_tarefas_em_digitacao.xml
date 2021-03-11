@@ -30,18 +30,6 @@
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fb_nova_tarefa"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:src="@drawable/ic_baseline_add_48"
-            app:fabCustomSize="48dp"
-            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
